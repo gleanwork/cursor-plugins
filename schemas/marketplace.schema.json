@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Cursor Plugin Marketplace",
+  "description": "Schema for the top-level marketplace.json file",
+  "type": "object",
+  "required": ["name", "plugins"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Name of the plugin collection"
+    },
+    "version": {
+      "type": "string",
+      "description": "Version of the plugin collection"
+    },
+    "owner": {
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "email": { "type": "string", "format": "email" }
+      },
+      "required": ["name"]
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "description": { "type": "string" }
+      }
+    },
+    "plugins": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "source"],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Plugin name (must match plugin.json name)"
+          },
+          "source": {
+            "type": "string",
+            "description": "Relative path to the plugin directory"
+          },
+          "description": {
+            "type": "string",
+            "description": "Short description of the plugin"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Cursor Plugin",
+  "description": "Schema for a Cursor plugin.json file",
+  "type": "object",
+  "required": ["name"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Plugin identifier (lowercase, hyphenated)"
+    },
+    "displayName": {
+      "type": "string",
+      "description": "Human-readable plugin name"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+",
+      "description": "Semantic version"
+    },
+    "description": {
+      "type": "string",
+      "description": "Plugin description"
+    },
+    "author": {
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "email": { "type": "string", "format": "email" },
+        "url": { "type": "string", "format": "uri" }
+      },
+      "required": ["name"]
+    },
+    "publisher": {
+      "type": "string",
+      "description": "Publisher name"
+    },
+    "homepage": {
+      "type": "string",
+      "format": "uri",
+      "description": "Plugin homepage URL"
+    },
+    "repository": {
+      "type": "string",
+      "description": "Repository URL"
+    },
+    "license": {
+      "type": "string",
+      "description": "SPDX license identifier"
+    },
+    "logo": {
+      "type": "string",
+      "description": "Path to logo image"
+    },
+    "keywords": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "category": {
+      "type": "string",
+      "description": "Plugin category"
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "skills": {
+      "type": "string",
+      "description": "Path to skills directory"
+    },
+    "agents": {
+      "type": "string",
+      "description": "Path to agents directory"
+    },
+    "rules": {
+      "type": "string",
+      "description": "Path to rules directory"
+    }
+  }
+}

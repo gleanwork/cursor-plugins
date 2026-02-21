@@ -1,0 +1,53 @@
+{
+  "name": "@gleanwork/cursor-plugins",
+  "version": "0.1.0",
+  "description": "Official Glean plugins for Cursor — enterprise knowledge integration",
+  "keywords": [
+    "glean",
+    "cursor",
+    "plugin",
+    "mcp",
+    "enterprise-search",
+    "knowledge-management"
+  ],
+  "homepage": "https://docs.glean.com/mcp",
+  "bugs": {
+    "url": "https://github.com/gleanwork/cursor-plugins/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gleanwork/cursor-plugins.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Glean",
+    "email": "support@glean.com",
+    "url": "https://glean.com"
+  },
+  "type": "module",
+  "scripts": {
+    "release": "release-it",
+    "validate": "node scripts/validate-plugins.mjs"
+  },
+  "files": [
+    ".cursor-plugin/**/*",
+    "glean-core/**/*",
+    "glean-search/**/*",
+    "glean-code/**/*",
+    "glean-people/**/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@release-it/bumper": "^7.0.5",
+    "@release-it/conventional-changelog": "^10.0.2",
+    "release-it": "^19.0.6"
+  }
+}

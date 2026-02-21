@@ -1,0 +1,47 @@
+{
+  "$schema": "https://unpkg.com/release-it/schema/release-it.json",
+  "git": {
+    "commitMessage": "chore: release v${version}",
+    "tagName": "v${version}"
+  },
+  "github": {
+    "release": false
+  },
+  "npm": false,
+  "plugins": {
+    "@release-it/conventional-changelog": {
+      "preset": {
+        "name": "conventionalcommits"
+      },
+      "infile": "CHANGELOG.md"
+    },
+    "@release-it/bumper": {
+      "out": [
+        {
+          "file": "package.json",
+          "path": "version"
+        },
+        {
+          "file": ".cursor-plugin/marketplace.json",
+          "path": "version"
+        },
+        {
+          "file": "glean-core/.cursor-plugin/plugin.json",
+          "path": "version"
+        },
+        {
+          "file": "glean-search/.cursor-plugin/plugin.json",
+          "path": "version"
+        },
+        {
+          "file": "glean-code/.cursor-plugin/plugin.json",
+          "path": "version"
+        },
+        {
+          "file": "glean-people/.cursor-plugin/plugin.json",
+          "path": "version"
+        }
+      ]
+    }
+  }
+}
