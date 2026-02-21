@@ -2,6 +2,7 @@
 name: plan-prep-researcher
 description: Research enterprise context and similar patterns for planning tasks
 model: inherit
+readonly: true
 ---
 
 # Plan Preparation Researcher Agent

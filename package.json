@@ -48,6 +48,8 @@
   "devDependencies": {
     "@release-it/bumper": "^7.0.5",
     "@release-it/conventional-changelog": "^10.0.2",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
     "release-it": "^19.0.6"
   }
 }

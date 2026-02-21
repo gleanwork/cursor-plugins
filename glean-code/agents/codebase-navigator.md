@@ -2,6 +2,7 @@
 name: codebase-navigator
 description: Navigates internal code repositories to find implementations, understand patterns, and trace dependencies across systems via Glean code search
 model: inherit
+readonly: true
 ---
 
 # Codebase Navigator Agent

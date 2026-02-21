@@ -1,6 +1,6 @@
 ---
 name: people-lookup
-description: Use when the user asks about people, employees, team members, org structure, or expertise. Triggers on phrases like "who works on", "who is responsible for", "who owns", "find someone who knows", "who should I talk to", "who reports to", "team members", "org chart", or any question starting with "who" about the company.
+description: Find people by name, role, team, or expertise using Glean employee search and activity signals.
 ---
 
 # People Lookup via Glean
@@ -115,8 +115,8 @@ No strong expertise matches found for [topic].
 - Check with [related team] leadership
 ```
 
-## Relationship to Commands
+## Related Commands
 
-For comprehensive expertise discovery, suggest:
-- `/glean-people:find-expert <topic>` - Multi-signal expertise analysis
-- `/glean-people:stakeholders <change>` - Find who needs to be involved
+For structured expertise workflows, use:
+- `/find-expert` - Multi-signal expertise analysis
+- `/stakeholders` - Find who needs to be involved in a change

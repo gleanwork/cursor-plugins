@@ -1,11 +1,11 @@
 ---
 name: search
-description: Perform a structured Glean search with result vetting and quality assessment.
+description: Search Glean enterprise knowledge and return vetted, quality-filtered results
 ---
 
-# Structured Glean Search
+# Glean Search
 
-Perform a structured search across Glean enterprise knowledge and return vetted, quality-assessed results.
+Search across Glean enterprise knowledge for the topic provided in your message.
 
 ## Core Principles
 
@@ -15,15 +15,11 @@ Perform a structured search across Glean enterprise knowledge and return vetted,
 
 ## Search Process
 
-### 1. Identify the Query
+### 1. Execute Search
 
-Gather the search topic from the user's request or current conversation context.
+Use the Glean search tool with the query from the user's message.
 
-### 2. Execute Search
-
-Use the Glean search tool with the user's query. Return the most relevant results.
-
-### 3. Assess Results
+### 2. Assess Results
 
 For each result, evaluate:
 
@@ -37,7 +33,7 @@ For each result, evaluate:
 
 Only show results that pass the relevance check. If old, note it.
 
-### 4. Present Vetted Results
+### 3. Present Vetted Results
 
 For each included result:
 - **Title** (as a clickable link if URL available)
@@ -46,14 +42,14 @@ For each included result:
 - **Snippet** (relevant excerpt)
 - **Relevance note** (why this matches)
 
-### 5. Note Quality
+### 4. Note Quality
 
 After results, include:
 - How many results were found vs. shown
 - Any concerns about result quality
 - Suggestions if results seem limited
 
-### 6. Offer Follow-up Actions
+### 5. Offer Follow-up Actions
 
 After showing results, offer next steps:
 - Read a document in full
@@ -73,34 +69,14 @@ Found [X] results, showing top [Y] most relevant:
 
 **Why relevant**: [Brief note on why this matches]
 
-### 2. [Title] ⚠️
-**Source**: Slack | **Updated**: 8 months ago ⚠️
-> [Relevant snippet...]
-
-**Why relevant**: [Note] | **Caveat**: May be outdated
-
 ---
 
 **Quality note**: [X] results filtered out (keyword matches in different context)
-
-**If these don't help**: Try [alternative search suggestion]
 ```
 
 ## Troubleshooting
 
 ### Glean MCP Not Connected
 If you see errors about missing `mcp__glean` tools:
-- Check `~/.cursor/mcp.json` for a Glean server entry
-- Use the mcp-setup skill to configure a connection
-
-### No Results Found
-If search returns no results:
-- Suggest alternative keywords or phrasings
-- Try removing specific terms that might be too narrow
-- Check if this might be in a restricted system
-
-### Too Many Results
-If too many results appear:
-- Apply stricter relevance filtering
-- Suggest adding filters (owner, date range, app)
-- Focus on most recent and most relevant
+- Run `/mcp-status` to check connection
+- Run `/mcp-setup` to configure

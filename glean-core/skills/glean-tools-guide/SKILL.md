@@ -1,6 +1,6 @@
 ---
 name: glean-tools-guide
-description: Use when Glean MCP tools are available and you need guidance on which tool to use, how to format queries, or best practices for enterprise search. This skill provides tool selection logic and query optimization for Glean integrations. Auto-triggers when mcp__glean tools are being considered.
+description: Select and use Glean MCP tools correctly — covers tool selection by query type, query filter syntax, and best practices for all Glean tool types.
 ---
 
 # Glean Tools Selection Guide

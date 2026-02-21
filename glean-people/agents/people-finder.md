@@ -2,6 +2,7 @@
 name: people-finder
 description: Finds people by role, expertise, activity, or organizational relationship using employee search and activity signals
 model: inherit
+readonly: true
 ---
 
 # People Finder Agent

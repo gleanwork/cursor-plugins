@@ -1,6 +1,6 @@
 ---
 name: synthesis-patterns
-description: Use when combining information from multiple Glean sources or when needing to synthesize results across documents, meetings, code, and people searches. Triggers on complex queries that span multiple data types, when results seem contradictory, when building comprehensive answers from partial information, or when the user asks for a complete picture of something that requires multiple queries.
+description: Combine and synthesize information across multiple Glean sources — documents, code, meetings, and people — into coherent answers.
 ---
 
 # Multi-Source Synthesis Patterns

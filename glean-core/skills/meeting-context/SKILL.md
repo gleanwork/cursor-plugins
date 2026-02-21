@@ -1,6 +1,6 @@
 ---
 name: meeting-context
-description: Use when the user asks about meetings, meeting history, decisions made in meetings, action items from discussions, or what was discussed. Triggers on phrases like "what was decided", "meeting about", "action items from", "what happened in the meeting", "meeting notes", "transcript", "who attended", or when needing context from past conversations and discussions.
+description: Find meeting transcripts, decisions, and action items via Glean meeting search.
 ---
 
 # Meeting Context via Glean

@@ -1,6 +1,6 @@
 ---
 name: plan-prep
-description: Use when the user wants to prepare for plan mode by gathering enterprise context. Triggers on "plan with glean", "prep for plan", "research before planning", "plan prep", or when starting strategic or architectural planning work and wanting to incorporate organizational knowledge first.
+description: Research enterprise context before plan mode — design docs, similar implementations, stakeholders, and related systems.
 ---
 
 # Planning Preparation via Glean

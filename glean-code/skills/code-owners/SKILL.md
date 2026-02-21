@@ -1,6 +1,6 @@
 ---
 name: code-owners
-description: Use when the user wants to identify who owns, maintains, or has expertise in a specific code area or component. Triggers on "who owns [component]", "who maintains [service]", "who should I talk to about [code area]", "who's responsible for [system]", or similar ownership queries.
+description: Identify who owns, maintains, or has expertise in a specific code area or component.
 ---
 
 # Code Owners

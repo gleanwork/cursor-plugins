@@ -7,7 +7,6 @@
     "name": "Glean",
     "email": "steve.calvert@glean.com"
   },
-  "publisher": "Glean",
   "homepage": "https://docs.glean.com/administration/platform/mcp/about",
   "repository": "https://github.com/gleanwork/cursor-plugins",
   "license": "MIT",

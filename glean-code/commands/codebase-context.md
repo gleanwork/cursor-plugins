@@ -1,11 +1,13 @@
 ---
 name: codebase-context
-description: Gather architectural context about an internal system from code and documentation across the organization.
+description: Get architectural context about an internal system from code repositories and documentation
 ---
 
 # Codebase Context
 
 Gather comprehensive architectural context about an internal system by searching code and documentation across the organization.
+
+The system or component to research comes from the user's message.
 
 ## Core Principles
 
@@ -25,10 +27,7 @@ code_search "[system] main OR core updated:past_month"
 code_search "[system] service handler"
 ```
 
-Look for:
-- Main entry points and core modules
-- API definitions (REST, gRPC, GraphQL)
-- Key data structures and models
+Look for main entry points, API definitions, and key data structures.
 
 ### Phase 2: Find the Documentation
 
@@ -42,8 +41,6 @@ search "[system] runbook OR playbook"
 
 ### Phase 3: Identify Key Contributors
 
-Find who's actively working on this system:
-
 ```
 code_search "[system] owner:* updated:past_month"
 ```
@@ -52,19 +49,10 @@ Cross-reference with `employee_search` for contact info.
 
 ### Phase 4: Vet All Content
 
-For each piece of content, evaluate:
-
-| Test | ✅ Include | ⚠️ Note | ❌ Reject |
-|------|-----------|---------|---------|
-| **Relevance** | Core component, directly relevant | Mentions system but not central | Keyword coincidence |
-| **Currency** | <6 months, matches code | 6-12 months | 12+ months with no activity |
-| **Authority** | Approved RFC, design doc, official runbook | Team wiki, notes, drafts | Outdated proposals, abandoned work |
-| **Doc/Code consistency** | Docs reflect current state | Note discrepancy, prefer code | Doc significantly wrong — warn user |
-
-**Repository Health:**
-- ✅ ACTIVE: Commits in past month
-- ⚠️ SLOWING: Last commit 1-6 months ago
-- ❌ STALE: No commits in 6+ months
+For each piece of content evaluate relevance, currency, and authority:
+- ✅ CURRENT: Updated in past 6 months, matches code
+- ⚠️ AGING: 6-12 months — note with caution
+- ❌ STALE: 12+ months — likely outdated
 
 ### Phase 5: Generate Vetted Context Report
 
@@ -75,72 +63,44 @@ For each piece of content, evaluate:
 | Component | Last Updated | Status |
 |-----------|--------------|--------|
 | Main repo | [date] | Active / Slowing / Stale |
-| Design doc | [date] | Current / Aging / Outdated |
 
 ## Overview
-[1-2 paragraph summary synthesized from current docs — note age of sources]
+[1-2 paragraph summary from current docs]
 
 ## Key Repositories
 | Repository | Purpose | Last Active | Status |
 |------------|---------|-------------|--------|
-| [repo] | [what it does] | [date] | Active / Stale |
 
 ## Architecture Highlights
-[Only include if from recent/authoritative sources]
 - **API Layer**: [description] (source: [doc], updated [date])
-- **Data Model**: [description]
 - **Key Dependencies**: [list]
 
 ## Documentation (Vetted)
-
-### Current & Authoritative
 | Doc | Type | Updated | Summary |
 |-----|------|---------|---------|
-| [Title] | RFC | [date] | [summary] |
-
-### Use With Caution (Aging)
-| Doc | Type | Updated | Caveat |
-|-----|------|---------|--------|
-| [Title] | Design doc | [date] | May not reflect current implementation |
 
 ## Key Contributors
 | Name | Role | Last Active | Contact |
 |------|------|-------------|---------|
-| [Name] | [Title] | [date] | [email] |
 
 ## Related Systems
 - **Upstream**: [systems that call this one]
 - **Downstream**: [systems this one calls]
 
 ## Warnings
-- [ ] [Any concerns about the system's state]
+[Any concerns about the system's state]
 ```
 
 ## If Limited Context Found
 
 ```markdown
-# Codebase Context: [System Name]
-
 ## Limited Context Available
 
 Found limited authoritative information about this system.
 
-**What I found:** [code/docs summary]
-**Gaps:** No recent design documentation, no clear architectural overview
+**Gaps:** [missing docs, stale repos, etc.]
 
 **Suggested next steps:**
 1. Check with [suggested team/person]
 2. Explore the code directly: [suggested entry points]
 ```
-
-## Troubleshooting
-
-### No Results Found
-- Try alternative system names or acronyms
-- Search for related technologies
-- Check if the system might be in a private repo
-
-### Conflicting Information
-- Note the discrepancy clearly
-- Prefer code as source of truth for current state
-- Reference doc dates to identify which might be outdated

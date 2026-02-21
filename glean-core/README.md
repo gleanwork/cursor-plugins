@@ -2,36 +2,50 @@
 
 **Required foundation for all Glean plugins.**
 
-This plugin provides shared skills, MCP tool guidance, always-on rules, and configuration commands that all other Glean plugins depend on.
+Provides shared skills for tool selection and result quality, always-on rules for proper Glean MCP usage, and setup guidance for configuring your Glean connection.
+
+## Prerequisites
+
+- [Cursor](https://cursor.com)
+- A Glean account with MCP access
 
 ## Installation
 
-```bash
-cursor plugin install glean-core
 ```
+/add-plugin glean-core
+```
+
+Then configure your Glean MCP server in `~/.cursor/mcp.json`:
+
+```json
+{
+  "mcpServers": {
+    "glean": {
+      "url": "https://YOUR-INSTANCE-be.glean.com/mcp/YOUR-SERVER-NAME"
+    }
+  }
+}
+```
+
+Restart Cursor after editing. OAuth authentication is handled automatically on first use.
 
 ## What's Included
 
 ### Skills
-- **glean-tools-guide** - Comprehensive guidance for selecting and using Glean MCP tools
-- **enterprise-search** - Triggers for document search queries
-- **confidence-signals** - Quality and reliability assessment for search results
-- **people-lookup** - Triggers for people/org queries
-- **meeting-context** - Triggers for meeting queries
-- **synthesis-patterns** - Guidance for combining information from multiple sources
 
-### Rules
-- **glean-tool-selection** - Always-active guidance for choosing the right Glean tool
-- **glean-result-vetting** - Always-active quality vetting framework for search results
+- **glean-tools-guide** — Comprehensive guidance for selecting and using Glean MCP tools correctly
+- **enterprise-search** — Triggers for document, wiki, and policy search queries
+- **confidence-signals** — Quality and reliability assessment for search results
+- **people-lookup** — Triggers for people and org structure queries
+- **meeting-context** — Triggers for meeting and decision queries
+- **synthesis-patterns** — Guidance for combining information from multiple sources
+- **mcp-setup** — Step-by-step guidance for configuring a Glean MCP server in Cursor
+- **mcp-status** — Check which Glean MCP servers are configured and active
 
-### Commands
-- `/glean-core:mcp-setup` - Configure your Glean MCP server connection
-- `/glean-core:status` - Check MCP connection status
+### Rules (always active)
 
-## Requirements
-
-- Cursor IDE
-- Glean MCP server configured in `~/.cursor/mcp.json` (run `/glean-core:mcp-setup` to configure)
+- **glean-tool-selection** — Ensures the correct Glean tool is used for each query type (people vs. docs vs. code vs. meetings)
+- **glean-result-vetting** — Enforces quality filtering before presenting Glean results
 
 ## Next Steps
 
@@ -45,5 +59,5 @@ After installing glean-core, install the feature plugins you need:
 
 ## Support
 
-- Documentation: https://docs.glean.com/mcp
-- Issues: https://github.com/gleanwork/cursor-plugins/issues
+- [Glean MCP Documentation](https://docs.glean.com/mcp)
+- [GitHub Issues](https://github.com/gleanwork/cursor-plugins/issues)

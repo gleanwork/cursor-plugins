@@ -1,6 +1,6 @@
 ---
 name: code-exploration
-description: Use when the user asks about internal code, implementations, patterns across repositories, or needs to understand how something is built. Triggers on "how is X implemented", "where is the code for", "find the implementation of", "what repos contain", "who wrote the code for", or code architecture questions about internal systems.
+description: Search internal code repositories to find implementations, patterns, and contributors across the organization.
 ---
 
 # Cross-Repository Code Exploration via Glean

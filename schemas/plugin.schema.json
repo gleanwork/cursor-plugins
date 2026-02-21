@@ -1,80 +1,137 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "Cursor Plugin",
-  "description": "Schema for a Cursor plugin.json file",
+  "$id": "https://cursor.com/schemas/cursor-plugin/plugin.json",
+  "title": "Cursor Plugin Manifest",
+  "description": "Schema for .cursor-plugin/plugin.json — defines a single Cursor plugin's metadata, components, and configuration.",
   "type": "object",
   "required": ["name"],
+  "additionalProperties": false,
   "properties": {
     "name": {
       "type": "string",
-      "description": "Plugin identifier (lowercase, hyphenated)"
+      "minLength": 1,
+      "pattern": "^[a-z0-9]([a-z0-9.-]*[a-z0-9])?$",
+      "description": "Unique plugin identifier in kebab-case (lowercase alphanumeric with hyphens and periods)."
     },
     "displayName": {
       "type": "string",
-      "description": "Human-readable plugin name"
-    },
-    "version": {
-      "type": "string",
-      "pattern": "^\\d+\\.\\d+\\.\\d+",
-      "description": "Semantic version"
+      "description": "Human-readable display name for the plugin."
     },
     "description": {
       "type": "string",
-      "description": "Plugin description"
+      "description": "Short description of what the plugin does."
+    },
+    "version": {
+      "type": "string",
+      "description": "Semantic version of the plugin (e.g. \"1.2.3\")."
     },
     "author": {
-      "type": "object",
-      "properties": {
-        "name": { "type": "string" },
-        "email": { "type": "string", "format": "email" },
-        "url": { "type": "string", "format": "uri" }
-      },
-      "required": ["name"]
+      "$ref": "#/$defs/author",
+      "description": "The plugin author."
     },
     "publisher": {
       "type": "string",
-      "description": "Publisher name"
+      "minLength": 1,
+      "description": "Publisher or organisation name."
     },
     "homepage": {
       "type": "string",
       "format": "uri",
-      "description": "Plugin homepage URL"
+      "description": "URL to the plugin's homepage."
     },
     "repository": {
       "type": "string",
-      "description": "Repository URL"
+      "format": "uri",
+      "description": "URL to the plugin's source code repository."
     },
     "license": {
       "type": "string",
-      "description": "SPDX license identifier"
+      "description": "SPDX license identifier (e.g. \"MIT\", \"Apache-2.0\")."
     },
     "logo": {
       "type": "string",
-      "description": "Path to logo image"
+      "description": "Path to a logo image (relative to the plugin root) or an absolute URL."
     },
     "keywords": {
       "type": "array",
-      "items": { "type": "string" }
+      "items": { "type": "string" },
+      "description": "Keywords for discovery and search."
     },
     "category": {
       "type": "string",
-      "description": "Plugin category"
+      "description": "Plugin category for marketplace classification."
     },
     "tags": {
       "type": "array",
-      "items": { "type": "string" }
+      "items": { "type": "string" },
+      "description": "Tags for filtering and discovery."
     },
-    "skills": {
-      "type": "string",
-      "description": "Path to skills directory"
+    "commands": {
+      "$ref": "#/$defs/stringOrStringArray",
+      "description": "Glob pattern(s) or path(s) to command files."
     },
     "agents": {
-      "type": "string",
-      "description": "Path to agents directory"
+      "$ref": "#/$defs/stringOrStringArray",
+      "description": "Glob pattern(s) or path(s) to agent definition files."
+    },
+    "skills": {
+      "$ref": "#/$defs/stringOrStringArray",
+      "description": "Glob pattern(s) or path(s) to skill files."
     },
     "rules": {
-      "type": "string",
-      "description": "Path to rules directory"
+      "$ref": "#/$defs/stringOrStringArray",
+      "description": "Glob pattern(s) or path(s) to rule files."
+    },
+    "hooks": {
+      "oneOf": [
+        { "type": "string" },
+        { "type": "object" }
+      ],
+      "description": "Path to a hooks configuration file, or an inline hooks object."
+    },
+    "mcpServers": {
+      "$ref": "#/$defs/mcpServers",
+      "description": "MCP server configuration — a path, an inline config object, or an array of either."
+    }
+  },
+  "$defs": {
+    "author": {
+      "type": "object",
+      "required": ["name"],
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Author name."
+        },
+        "email": {
+          "type": "string",
+          "format": "email",
+          "description": "Author email address."
+        }
+      }
+    },
+    "stringOrStringArray": {
+      "oneOf": [
+        { "type": "string" },
+        { "type": "array", "items": { "type": "string" } }
+      ]
+    },
+    "mcpServers": {
+      "oneOf": [
+        { "type": "string" },
+        { "type": "object" },
+        {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              { "type": "string" },
+              { "type": "object" }
+            ]
+          }
+        }
+      ]
     }
   }
 }

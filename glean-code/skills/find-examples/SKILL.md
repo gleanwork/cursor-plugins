@@ -1,6 +1,6 @@
 ---
 name: find-examples
-description: Use when the user wants to find usage examples of an API, library, or code pattern across internal repositories. Triggers on "show me examples of", "how do other teams use", "find examples of [API/pattern]", "how is [library] used internally", or similar example discovery requests.
+description: Find usage examples of an API, library, or code pattern across internal repositories.
 ---
 
 # Find Examples

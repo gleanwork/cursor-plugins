@@ -1,6 +1,6 @@
 ---
 name: confidence-signals
-description: Use when you need to communicate the reliability, freshness, or authority of information from Glean. Triggers when presenting search results, when data might be stale, when sources have different authority levels, when the user should verify information, or when you're uncertain about completeness of results.
+description: Assess and communicate the reliability, freshness, and authority of Glean search results before presenting them.
 ---
 
 # Confidence Signals

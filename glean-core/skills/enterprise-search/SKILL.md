@@ -1,6 +1,6 @@
 ---
 name: enterprise-search
-description: Use when the user asks about company documents, internal wikis, policies, specifications, design docs, RFCs, or enterprise knowledge. Triggers on phrases like "find the doc about", "what's our policy on", "where is the spec for", "company guidelines", "internal documentation", or when searching for information that would be in enterprise systems rather than the local codebase.
+description: Search company documents, wikis, policies, design docs, and internal knowledge via Glean.
 ---
 
 # Enterprise Search via Glean

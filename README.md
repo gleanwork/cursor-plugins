@@ -1,16 +1,22 @@
 # Glean Plugins for Cursor
 
-Official Glean plugins for Cursor IDE — enterprise knowledge, code search, and people discovery.
+[![Experimental](https://img.shields.io/badge/-Experimental-D8FD49?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMzIgMzIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0yNC4zMDA2IDIuOTU0MjdMMjAuNzY1NiAwLjE5OTk1MUwxNy45MDI4IDMuOTk1MjdDMTMuNTY1MyAxLjkzNDk1IDguMjMwMTkgMy4wODQzOSA1LjE5Mzk0IDcuMDA5ODNDMS42NTg4OCAxMS41NjQyIDIuNDgzIDE4LjExMzggNy4wMzczOCAyMS42NDg5QzguNzcyMzggMjIuOTkzNSAxMC43ODkzIDIzLjcwOTIgMTIuODI3OSAyMy44MTc3QzE2LjE0NjEgMjQuMDEyOCAxOS41MDc3IDIyLjYyNDggMjEuNjc2NSAxOS44MDU1QzI0LjczNDQgMTUuODggMjQuNTE3NSAxMC40MTQ4IDIxLjQ1OTYgNi43Mjc4OUwyNC4zMDA2IDIuOTU0MjdaTTE4LjExOTcgMTcuMDUxMkMxNi4xMDI4IDE5LjYzMiAxMi4zNzI1IDIwLjEwOTEgOS43NzAwMSAxOC4wOTIyQzcuMTg5MTkgMTYuMDc1MiA2LjcxMjA3IDEyLjMyMzMgOC43MjkwMSA5Ljc0MjQ2QzkuNzA0OTQgOC40ODQ1OCAxMS4xMTQ2IDcuNjgyMTQgMTIuNjc2MSA3LjQ4Njk2QzEzLjA0NDggNy40NDM1OCAxMy40MTM1IDcuNDIxOSAxMy43ODIyIDcuNDQzNThDMTQuOTc1IDcuNTA4NjUgMTYuMTI0NCA3Ljk0MjM5IDE3LjA3ODcgOC42Nzk3N0MxOS42NTk1IDEwLjcxODQgMjAuMTM2NiAxNC40NzAzIDE4LjExOTcgMTcuMDUxMloiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0yNC41MTc2IDIxLjY5MjJDMjMuOTMyIDIyLjQ1MTMgMjMuMjgxNCAyMy4xMjM2IDIyLjU2NTcgMjMuNzUyNUMyMS44NzE3IDI0LjMzODEgMjEuMTEyNyAyNC44ODAzIDIwLjMxMDIgMjUuMzM1N0MxOS41Mjk1IDI1Ljc2OTUgMTguNjgzNyAyNi4xMzgyIDE3LjgzNzggMjYuNDIwMUMxNi45OTIgMjYuNzAyIDE2LjEwMjggMjYuODk3MiAxNS4yMTM3IDI3LjAwNTdDMTQuMzI0NSAyNy4xMTQxIDEzLjQzNTMgMjcuMTU3NSAxMi41MjQ0IDI3LjA5MjRDMTEuNjEzNSAyNy4wMjczIDEwLjcyNDMgMjYuODc1NSA5Ljg1Njg0IDI2LjY1ODdMOS42NjE2NSAyNy4zNzQzTDguNzcyNDYgMzAuOTk2MkM5LjkwMDIxIDMxLjI5OTggMTEuMDQ5NyAzMS40NzMzIDEyLjIyMDggMzEuNTZDMTIuMjY0MiAzMS41NiAxMi4zMjkyIDMxLjU2IDEyLjM3MjYgMzEuNTZDMTMuNTAwMyAzMS42MjUxIDE0LjY0OTggMzEuNTgxNyAxNS43NTU4IDMxLjQ1MTZDMTYuOTI3IDMxLjI5OTggMTguMDk4MSAzMS4wMzk1IDE5LjIyNTggMzAuNjcwOEMyMC4zNTM2IDMwLjMwMjIgMjEuNDU5NyAyOS44MjUgMjIuNTAwNyAyOS4yMzk1QzIzLjU2MzQgMjguNjUzOSAyNC41NjEgMjcuOTM4MiAyNS40OTM1IDI3LjE1NzVDMjYuNDQ3OCAyNi4zNTUgMjcuMzE1MyAyNS40NDQyIDI4LjA3NDQgMjQuNDQ2NUMyOC4xODI4IDI0LjMxNjQgMjguMjY5NSAyNC4xNjQ2IDI4LjM3OCAyNC4wMTI4TDI0Ljc3NzkgMjEuMzQ1MkMyNC42Njk0IDIxLjQ1MzcgMjQuNjA0NCAyMS41ODM4IDI0LjUxNzYgMjEuNjkyMloiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPg==&labelColor=343CED)](https://github.com/gleanwork/.github/blob/main/docs/repository-stability.md#experimental)
 
-## What These Plugins Do
+Official Glean plugins for [Cursor](https://cursor.com), enabling enterprise knowledge integration directly in your development workflow.
 
-These plugins connect Cursor to your company's knowledge via [Glean MCP](https://docs.glean.com/administration/platform/mcp/about). They provide skills, agents, commands, and rules that help your AI assistant search enterprise documents, explore code across repositories, and find the right people.
+## Quick Start
 
-## Prerequisites
+```
+# Install the foundation plugin first (required)
+/add-plugin glean-core
 
-You must have a Glean MCP server configured in your Cursor settings before using these plugins.
+# Then install the feature plugins you need
+/add-plugin glean-search
+/add-plugin glean-code
+/add-plugin glean-people
+```
 
-Add your Glean MCP server to `~/.cursor/mcp.json`:
+Then configure your Glean MCP connection — add your server to `~/.cursor/mcp.json`:
 
 ```json
 {
@@ -22,88 +28,50 @@ Add your Glean MCP server to `~/.cursor/mcp.json`:
 }
 ```
 
-Replace `YOUR-INSTANCE` with your Glean instance name and `YOUR-SERVER-NAME` with the server name provided by your Glean administrator.
+Replace `YOUR-INSTANCE` with your Glean instance name and `YOUR-SERVER-NAME` with the server name provided by your Glean administrator. Restart Cursor after editing — OAuth authentication is handled automatically on first use.
 
 ## Plugins
 
-### [glean-core](./glean-core)
+| Plugin | Description | Docs |
+|--------|-------------|------|
+| **[glean-core](./glean-core)** | Foundation plugin with MCP setup skills, tool guidance, and result-vetting rules. **Required by all other plugins.** | [README](./glean-core/README.md) |
+| **[glean-search](./glean-search)** | Enterprise search across docs, Slack, email, and more | [README](./glean-search/README.md) |
+| **[glean-code](./glean-code)** | Cross-repo code exploration, examples, and ownership | [README](./glean-code/README.md) |
+| **[glean-people](./glean-people)** | Find experts and identify stakeholders | [README](./glean-people/README.md) |
 
-**Required foundation for all other Glean plugins.**
+## Which Plugin Do I Need?
 
-Provides shared skills for tool selection and query optimization, always-on rules for result vetting, and MCP configuration commands.
+| I want to... | Install |
+|--------------|---------|
+| Search company docs, wikis, and Slack | `glean-core` + `glean-search` |
+| Find code examples or prior art across repos | `glean-core` + `glean-code` |
+| Research architecture before planning a feature | `glean-core` + `glean-code` |
+| Find who knows about a topic or owns a system | `glean-core` + `glean-people` |
+| Identify stakeholders for a change | `glean-core` + `glean-people` |
+| All of the above | Install all plugins |
 
-- **6 Skills**: Tool selection guide, enterprise search, confidence signals, meeting context, people lookup, synthesis patterns
-- **2 Rules**: Tool selection guidance, result quality vetting (always active)
-- **2 Commands**: `/glean-core:mcp-setup`, `/glean-core:status`
+## Requirements
 
-### [glean-search](./glean-search)
+- [Cursor](https://cursor.com) (latest version)
+- A Glean account with MCP access
+- Your Glean MCP server URL (format: `https://[instance]-be.glean.com/mcp/[server-name]`)
 
-**Enterprise search across documents, Slack, email, and other sources.**
-
-- **1 Skill**: Enterprise search triggers
-- **1 Agent**: `enterprise-searcher` — cross-source search with result vetting
-- **1 Command**: `/glean-search:search <query>`
-
-### [glean-code](./glean-code)
-
-**Cross-repository code exploration.**
-
-Search code across your org, find usage examples, identify code owners, and discover similar implementations.
-
-- **2 Skills**: Code exploration, plan preparation
-- **2 Agents**: `codebase-navigator`, `plan-prep-researcher`
-- **5 Commands**: `/glean-code:codebase-context`, `/glean-code:find-examples`, `/glean-code:code-owners`, `/glean-code:similar-code`, `/glean-code:plan-prep`
-
-### [glean-people](./glean-people)
-
-**Find experts, understand org structure, and identify stakeholders.**
-
-- **1 Agent**: `people-finder` — multi-signal people discovery
-- **2 Commands**: `/glean-people:find-expert <topic>`, `/glean-people:stakeholders <change>`
-
-## Installation
-
-Install plugins from the Cursor marketplace or from a local path:
-
-```bash
-# Install the foundation plugin first
-cursor plugin install glean-core
-
-# Then install the feature plugins you need
-cursor plugin install glean-search
-cursor plugin install glean-code
-cursor plugin install glean-people
-```
-
-## How It Works
-
-These plugins use three component types:
-
-- **Skills**: Auto-triggered guidance that helps the AI select the right Glean tools and apply quality filters
-- **Agents**: Autonomous specialists spawned for complex multi-step tasks (e.g., cross-source search, code exploration)
-- **Commands**: User-invoked structured workflows (e.g., `/glean-search:search authentication docs`)
-- **Rules**: Always-active coding guidance that ensures proper tool usage and result vetting
-
-All plugins require a configured Glean MCP server. They don't bundle MCP configuration — you bring your own server connection.
+> **Note:** Glean MCP server URLs are instance-specific and cannot be bundled with the plugin. Your Glean administrator can provide your server name.
 
 ## Development
 
 ```bash
-# Install dependencies
-npm install
-
-# Validate plugin structure
-npm run validate
-
-# Create a release
-npm run release
+npm install       # install dependencies
+npm run validate  # validate plugin structure
+npm run release   # create a release
 ```
 
 ## Support
 
-- Glean MCP Documentation: https://docs.glean.com/mcp
-- Issues: https://github.com/gleanwork/cursor-plugins/issues
+- [Glean MCP Documentation](https://docs.glean.com/mcp)
+- [Glean Support](https://help.glean.com)
+- [GitHub Issues](https://github.com/gleanwork/cursor-plugins/issues)
 
 ## License
 
-MIT
+MIT — see [LICENSE](LICENSE) for details.

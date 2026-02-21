@@ -1,6 +1,6 @@
 ---
 name: mcp-status
-description: Check which Glean MCP servers are configured and active in Cursor.
+description: Check Glean MCP server connection status
 ---
 
 # Glean Connection Status
@@ -26,8 +26,8 @@ Check if the configuration file exists and contains Glean server entries.
 
 **If no Glean servers are found:**
 - Inform the user that no Glean MCP servers are configured
-- Suggest using the mcp-setup skill to configure one
-- Briefly explain what Glean MCP enables
+- Suggest running `/mcp-setup` to configure one
+- Provide a brief explanation of what Glean MCP enables
 
 ### 4. Test Connectivity (Optional)
 
@@ -51,5 +51,5 @@ Glean MCP Status:
 
 No Glean MCP servers configured.
 
-Use the Glean MCP setup skill to configure a server.
+Run /mcp-setup to configure a Glean MCP server.
 ```

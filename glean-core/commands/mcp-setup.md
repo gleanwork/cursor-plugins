@@ -1,23 +1,23 @@
 ---
 name: mcp-setup
-description: Configure a Glean MCP server connection in Cursor step by step.
+description: Configure a Glean MCP server connection for Cursor
 ---
 
 # Glean MCP Server Setup
 
-Help the user configure a Glean MCP server for Cursor. This workflow can be repeated to add multiple servers.
+Help the user configure a Glean MCP server for Cursor. This command can be run multiple times to add multiple servers.
 
 ## Setup Flow
 
 ### Step 1: Get Instance Name
 
-Ask the user for their Glean instance name. If their Glean URL is `https://acme-be.glean.com`, their instance name is `acme`.
+Ask the user for their Glean instance name. Explain that if their Glean URL is `https://acme-be.glean.com`, their instance name is `acme`.
 
 You can find your Glean URL here: <https://app.glean.com/admin/about-glean>
 
 ### Step 2: Get Server Name
 
-Ask the user for the server name they want to connect to. Their Glean administrator should have provided this. Common examples include `default`, but server names are organization-specific.
+Ask the user for the server name they want to connect to. Explain that their Glean administrator should have provided this. Common examples include `default`, but server names are organization-specific.
 
 ### Step 3: Configure MCP Server
 
@@ -42,7 +42,7 @@ After configuration:
 1. Confirm the server entry was added to `~/.cursor/mcp.json`
 2. Remind the user to restart Cursor to activate the new server
 3. Explain that they'll be prompted to authenticate on first use (OAuth)
-4. Offer to walk through setup again if they want to add another server
+4. Offer to run `/mcp-setup` again if they want to add another server
 
 ## Important Notes
 

@@ -1,6 +1,6 @@
 ---
 name: similar-code
-description: Use when the user wants to find similar implementations or alternative approaches to a code pattern across internal repositories. Triggers on "is there already code for", "find similar implementations of", "how do other teams implement [pattern]", "prior art for [feature]", or similar discovery requests before building something new.
+description: Find similar implementations and prior art for a code pattern across internal repositories.
 ---
 
 # Similar Code

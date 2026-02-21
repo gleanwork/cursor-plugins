@@ -5,27 +5,27 @@
     "email": "steve.calvert@glean.com"
   },
   "metadata": {
-    "description": "Official Glean plugins for Cursor — enterprise knowledge, code search, and people discovery"
+    "description": "Official Glean plugins for Cursor — enterprise knowledge, code search, and people discovery."
   },
   "plugins": [
     {
       "name": "glean-core",
-      "source": "./glean-core",
+      "source": "glean-core",
       "description": "Core Glean MCP integration — shared skills, tool guidance, and rules. Required foundation for all other Glean plugins."
     },
     {
       "name": "glean-search",
-      "source": "./glean-search",
+      "source": "glean-search",
       "description": "Enterprise search across documents, Slack, email, and other sources via Glean."
     },
     {
       "name": "glean-code",
-      "source": "./glean-code",
+      "source": "glean-code",
       "description": "Cross-repository code exploration — search code across your org, find examples, and discover similar implementations."
     },
     {
       "name": "glean-people",
-      "source": "./glean-people",
+      "source": "glean-people",
       "description": "Find experts, understand org structure, and identify stakeholders via Glean."
     }
   ]

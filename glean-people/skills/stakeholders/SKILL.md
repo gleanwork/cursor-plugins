@@ -1,6 +1,6 @@
 ---
 name: stakeholders
-description: Use when the user wants to identify stakeholders who should be consulted or informed about a code change, project, or decision. Triggers on "who needs to approve", "who are the stakeholders for", "who should I involve in [change]", "stakeholder map for [project]", or similar stakeholder identification requests.
+description: Identify stakeholders who need to approve, consult on, or be informed about a change or project.
 ---
 
 # Stakeholder Discovery

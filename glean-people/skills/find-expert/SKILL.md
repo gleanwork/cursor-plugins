@@ -1,6 +1,6 @@
 ---
 name: find-expert
-description: Use when the user wants to identify subject matter experts for a specific topic, technology, or codebase area. Triggers on "who knows about", "find an expert on", "who should I talk to about [topic]", "who's the expert in [area]", or similar expert discovery requests.
+description: Find subject matter experts for a topic based on code contributions, document authorship, and activity signals.
 ---
 
 # Find Expert
