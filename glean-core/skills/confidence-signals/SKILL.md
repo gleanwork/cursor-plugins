@@ -1,6 +1,7 @@
 ---
 name: confidence-signals
 description: Assess and communicate the reliability, freshness, and authority of Glean search results before presenting them.
+  Use when presenting Glean results that may be stale, come from informal sources, or where the user should verify before acting on them.
 ---
 
 # Confidence Signals

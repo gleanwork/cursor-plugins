@@ -1,6 +1,7 @@
 ---
 name: mcp-setup
 description: Configure a Glean MCP server connection in Cursor step by step.
+  Use when the user wants to set up Glean in Cursor, add a new MCP server, or connect to a different Glean instance.
 ---
 
 # Glean MCP Server Setup

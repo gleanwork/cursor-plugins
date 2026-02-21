@@ -10,7 +10,7 @@
   "homepage": "https://docs.glean.com/administration/platform/mcp/about",
   "repository": "https://github.com/gleanwork/cursor-plugins",
   "license": "MIT",
-  "logo": "assets/avatar.png",
+  "logo": "assets/avatar.svg",
   "keywords": ["glean", "search", "enterprise", "documents"],
   "category": "developer-tools",
   "tags": ["search", "documents", "slack", "email"],

@@ -1,6 +1,7 @@
 ---
 name: synthesis-patterns
 description: Combine and synthesize information across multiple Glean sources — documents, code, meetings, and people — into coherent answers.
+  Use when answering questions that span multiple source types, or when results from one source need context from another to give a complete picture.
 ---
 
 # Multi-Source Synthesis Patterns

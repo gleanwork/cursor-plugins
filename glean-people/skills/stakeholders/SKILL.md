@@ -1,6 +1,7 @@
 ---
 name: stakeholders
 description: Identify stakeholders who need to approve, consult on, or be informed about a change or project.
+  Use when planning a change that affects other teams or systems and needing to know who to involve, consult, or notify.
 ---
 
 # Stakeholder Discovery

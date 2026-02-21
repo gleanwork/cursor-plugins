@@ -1,6 +1,7 @@
 ---
 name: search
 description: Perform a structured Glean search with result vetting and quality assessment.
+  Use when the user explicitly requests a Glean search and wants formatted results with freshness and authority indicators.
 ---
 
 # Structured Glean Search

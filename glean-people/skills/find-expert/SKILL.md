@@ -1,6 +1,7 @@
 ---
 name: find-expert
 description: Find subject matter experts for a topic based on code contributions, document authorship, and activity signals.
+  Use when asked who knows about a topic, technology, or system — finding real experts based on contributions rather than just job titles.
 ---
 
 # Find Expert

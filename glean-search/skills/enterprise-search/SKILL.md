@@ -1,6 +1,7 @@
 ---
 name: enterprise-search
 description: Search company documents, wikis, policies, design docs, and internal knowledge via Glean.
+  Use when asked about company policies, internal specs, design docs, RFCs, or any information that lives in enterprise systems rather than the local codebase.
 ---
 
 # Enterprise Search via Glean

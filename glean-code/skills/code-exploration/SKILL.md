@@ -1,6 +1,7 @@
 ---
 name: code-exploration
 description: Search internal code repositories to find implementations, patterns, and contributors across the organization.
+  Use when asked how something is implemented in other repos, where the code for a system lives, or who has been actively working on a codebase.
 ---
 
 # Cross-Repository Code Exploration via Glean

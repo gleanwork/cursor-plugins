@@ -1,6 +1,7 @@
 ---
 name: find-examples
 description: Find usage examples of an API, library, or code pattern across internal repositories.
+  Use when looking for how other teams use an internal API, library, or pattern before implementing something new.
 ---
 
 # Find Examples

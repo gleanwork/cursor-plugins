@@ -1,6 +1,7 @@
 ---
 name: meeting-context
 description: Find meeting transcripts, decisions, and action items via Glean meeting search.
+  Use when asked what was decided in a meeting, what action items came out of a discussion, or what was said about a topic in recent meetings.
 ---
 
 # Meeting Context via Glean

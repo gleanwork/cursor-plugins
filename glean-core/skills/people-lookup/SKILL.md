@@ -1,6 +1,7 @@
 ---
 name: people-lookup
 description: Find people by name, role, team, or expertise using Glean employee search and activity signals.
+  Use when asked who works on something, who owns a system, who to contact, or for org chart and reporting relationship queries.
 ---
 
 # People Lookup via Glean

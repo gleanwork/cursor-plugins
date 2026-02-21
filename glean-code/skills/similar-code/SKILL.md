@@ -1,6 +1,7 @@
 ---
 name: similar-code
 description: Find similar implementations and prior art for a code pattern across internal repositories.
+  Use when checking whether something already exists internally before building it, or looking for reference implementations to follow.
 ---
 
 # Similar Code

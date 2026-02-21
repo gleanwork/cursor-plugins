@@ -1,6 +1,7 @@
 ---
 name: glean-tools-guide
-description: Select and use Glean MCP tools correctly — covers tool selection by query type, query filter syntax, and best practices for all Glean tool types.
+description: Select and use Glean MCP tools correctly — tool selection by query type, filter syntax, and best practices for all Glean tool types.
+  Use when choosing between Glean tools, formatting queries, or applying filters for search, code, people, meetings, or email.
 ---
 
 # Glean Tools Selection Guide

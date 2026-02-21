@@ -1,6 +1,7 @@
 ---
 name: codebase-context
 description: Gather architectural context about an internal system from code and documentation across the organization.
+  Use when asked to understand a system's architecture, find its repos, or get an overview before working on it.
 ---
 
 # Codebase Context

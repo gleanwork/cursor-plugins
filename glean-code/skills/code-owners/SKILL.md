@@ -1,6 +1,7 @@
 ---
 name: code-owners
 description: Identify who owns, maintains, or has expertise in a specific code area or component.
+  Use when asked who to talk to about a system, who to request a code review from, or who has been actively working in a codebase area.
 ---
 
 # Code Owners

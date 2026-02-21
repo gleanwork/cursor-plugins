@@ -1,6 +1,7 @@
 ---
 name: mcp-status
 description: Check which Glean MCP servers are configured and active in Cursor.
+  Use when the user wants to verify their Glean connection, list configured servers, or troubleshoot MCP connectivity issues.
 ---
 
 # Glean Connection Status
