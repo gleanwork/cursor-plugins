@@ -1,7 +1,7 @@
 {
   "name": "glean-people",
   "displayName": "Glean People",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Find experts, understand org structure, and identify stakeholders via Glean.",
   "author": {
     "name": "Glean",
@@ -11,9 +11,19 @@
   "repository": "https://github.com/gleanwork/cursor-plugins",
   "license": "MIT",
   "logo": "assets/avatar.svg",
-  "keywords": ["glean", "people", "experts", "org-chart"],
+  "keywords": [
+    "glean",
+    "people",
+    "experts",
+    "org-chart"
+  ],
   "category": "developer-tools",
-  "tags": ["people", "experts", "stakeholders", "org"],
+  "tags": [
+    "people",
+    "experts",
+    "stakeholders",
+    "org"
+  ],
   "skills": "./skills/",
   "agents": "./agents/"
 }

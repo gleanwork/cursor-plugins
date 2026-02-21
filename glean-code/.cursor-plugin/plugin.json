@@ -1,7 +1,7 @@
 {
   "name": "glean-code",
   "displayName": "Glean Code",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Cross-repository code exploration — search code across your org, find examples, and discover similar implementations.",
   "author": {
     "name": "Glean",
@@ -11,9 +11,19 @@
   "repository": "https://github.com/gleanwork/cursor-plugins",
   "license": "MIT",
   "logo": "assets/avatar.svg",
-  "keywords": ["glean", "code-search", "cross-repo", "engineering"],
+  "keywords": [
+    "glean",
+    "code-search",
+    "cross-repo",
+    "engineering"
+  ],
   "category": "developer-tools",
-  "tags": ["code", "search", "architecture", "planning"],
+  "tags": [
+    "code",
+    "search",
+    "architecture",
+    "planning"
+  ],
   "skills": "./skills/",
   "agents": "./agents/"
 }

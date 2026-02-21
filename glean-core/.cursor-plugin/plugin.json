@@ -1,7 +1,7 @@
 {
   "name": "glean-core",
   "displayName": "Glean Core",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Core Glean MCP integration — shared skills, tool guidance, and rules. Required foundation for all other Glean plugins.",
   "author": {
     "name": "Glean",
@@ -11,9 +11,19 @@
   "repository": "https://github.com/gleanwork/cursor-plugins",
   "license": "MIT",
   "logo": "assets/avatar.svg",
-  "keywords": ["glean", "mcp", "enterprise-search", "core"],
+  "keywords": [
+    "glean",
+    "mcp",
+    "enterprise-search",
+    "core"
+  ],
   "category": "developer-tools",
-  "tags": ["mcp", "enterprise", "search", "foundation"],
+  "tags": [
+    "mcp",
+    "enterprise",
+    "search",
+    "foundation"
+  ],
   "skills": "./skills/",
   "rules": "./rules/"
 }

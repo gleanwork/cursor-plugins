@@ -28,5 +28,6 @@
       "source": "glean-people",
       "description": "Find experts, understand org structure, and identify stakeholders via Glean."
     }
-  ]
+  ],
+  "version": "1.0.0"
 }

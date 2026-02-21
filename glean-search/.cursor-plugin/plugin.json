@@ -1,7 +1,7 @@
 {
   "name": "glean-search",
   "displayName": "Glean Search",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Enterprise search across documents, Slack, email, and other sources via Glean.",
   "author": {
     "name": "Glean",
@@ -11,9 +11,19 @@
   "repository": "https://github.com/gleanwork/cursor-plugins",
   "license": "MIT",
   "logo": "assets/avatar.svg",
-  "keywords": ["glean", "search", "enterprise", "documents"],
+  "keywords": [
+    "glean",
+    "search",
+    "enterprise",
+    "documents"
+  ],
   "category": "developer-tools",
-  "tags": ["search", "documents", "slack", "email"],
+  "tags": [
+    "search",
+    "documents",
+    "slack",
+    "email"
+  ],
   "skills": "./skills/",
   "agents": "./agents/"
 }
