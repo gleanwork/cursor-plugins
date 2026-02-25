@@ -26,19 +26,7 @@
           "path": "version"
         },
         {
-          "file": "glean-core/.cursor-plugin/plugin.json",
-          "path": "version"
-        },
-        {
-          "file": "glean-search/.cursor-plugin/plugin.json",
-          "path": "version"
-        },
-        {
-          "file": "glean-code/.cursor-plugin/plugin.json",
-          "path": "version"
-        },
-        {
-          "file": "glean-people/.cursor-plugin/plugin.json",
+          "file": "glean/.cursor-plugin/plugin.json",
           "path": "version"
         }
       ]

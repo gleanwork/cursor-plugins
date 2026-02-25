@@ -31,10 +31,7 @@
   },
   "files": [
     ".cursor-plugin/**/*",
-    "glean-core/**/*",
-    "glean-search/**/*",
-    "glean-code/**/*",
-    "glean-people/**/*",
+    "glean/**/*",
     "README.md",
     "LICENSE"
   ],
