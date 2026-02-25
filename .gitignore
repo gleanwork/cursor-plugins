@@ -20,4 +20,4 @@ npm-debug.log*
 .env.local
 
 # Local planning docs
-docs/plans/
+docs/plans
