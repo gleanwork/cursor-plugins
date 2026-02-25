@@ -1,0 +1,32 @@
+{
+  "name": "glean",
+  "displayName": "Glean",
+  "version": "1.0.0",
+  "description": "Official Glean plugin for Cursor — enterprise search, code exploration, and people discovery.",
+  "author": {
+    "name": "Glean",
+    "email": "steve.calvert@glean.com"
+  },
+  "homepage": "https://docs.glean.com/administration/platform/mcp/about",
+  "repository": "https://github.com/gleanwork/cursor-plugins",
+  "license": "MIT",
+  "logo": "assets/avatar.svg",
+  "keywords": [
+    "glean",
+    "mcp",
+    "enterprise-search",
+    "code-search",
+    "people"
+  ],
+  "category": "developer-tools",
+  "tags": [
+    "mcp",
+    "enterprise",
+    "search",
+    "code",
+    "people"
+  ],
+  "skills": "./skills/",
+  "agents": "./agents/",
+  "rules": "./rules/"
+}
