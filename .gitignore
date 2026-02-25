@@ -18,3 +18,6 @@ npm-debug.log*
 # Local env files
 .env
 .env.local
+
+# Local planning docs
+docs/plans/
