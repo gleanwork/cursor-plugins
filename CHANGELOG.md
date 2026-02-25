@@ -1,5 +1,7 @@
 # Changelog
 
+## [2.0.0](https://github.com/gleanwork/cursor-plugins/compare/v1.0.0...v2.0.0) (2026-02-25)
+
 ## 1.0.0 (2026-02-21)
 
 All notable changes to this project will be documented in this file.
