@@ -2,7 +2,7 @@
   "name": "glean",
   "displayName": "Glean",
   "version": "1.0.0",
-  "description": "Official Glean plugin for Cursor — enterprise search, code exploration, and people discovery.",
+  "description": "Official Glean plugin for Cursor — search documents, Slack, and email; explore code across repos; and find experts and stakeholders.",
   "author": {
     "name": "Glean",
     "email": "steve.calvert@glean.com"
@@ -16,15 +16,22 @@
     "mcp",
     "enterprise-search",
     "code-search",
-    "people"
+    "documents",
+    "cross-repo",
+    "experts",
+    "org-chart"
   ],
   "category": "developer-tools",
   "tags": [
     "mcp",
     "enterprise",
     "search",
+    "documents",
+    "slack",
     "code",
-    "people"
+    "people",
+    "experts",
+    "org"
   ],
   "skills": "./skills/",
   "agents": "./agents/",
