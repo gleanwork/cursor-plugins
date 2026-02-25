@@ -7,13 +7,7 @@ Official Glean plugins for [Cursor](https://cursor.com), enabling enterprise kno
 ## Quick Start
 
 ```
-# Install the foundation plugin first (required)
-/add-plugin glean-core
-
-# Then install the feature plugins you need
-/add-plugin glean-search
-/add-plugin glean-code
-/add-plugin glean-people
+/add-plugin glean
 ```
 
 Then configure your Glean MCP connection — add your server to `~/.cursor/mcp.json`:
@@ -30,25 +24,11 @@ Then configure your Glean MCP connection — add your server to `~/.cursor/mcp.j
 
 Replace `YOUR-INSTANCE` with your Glean instance name and `YOUR-SERVER-NAME` with the server name provided by your Glean administrator. Restart Cursor after editing — OAuth authentication is handled automatically on first use.
 
-## Plugins
+## Plugin
 
-| Plugin                             | Description                                                                                                          | Docs                               |
-| ---------------------------------- | -------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
-| **[glean-core](./glean-core)**     | Foundation plugin with MCP setup skills, tool guidance, and result-vetting rules. **Required by all other plugins.** | [README](./glean-core/README.md)   |
-| **[glean-search](./glean-search)** | Enterprise search across docs, Slack, email, and more                                                                | [README](./glean-search/README.md) |
-| **[glean-code](./glean-code)**     | Cross-repo code exploration, examples, and ownership                                                                 | [README](./glean-code/README.md)   |
-| **[glean-people](./glean-people)** | Find experts and identify stakeholders                                                                               | [README](./glean-people/README.md) |
-
-## Which Plugin Do I Need?
-
-| I want to...                                    | Install                       |
-| ----------------------------------------------- | ----------------------------- |
-| Search company docs, wikis, and Slack           | `glean-core` + `glean-search` |
-| Find code examples or prior art across repos    | `glean-core` + `glean-code`   |
-| Research architecture before planning a feature | `glean-core` + `glean-code`   |
-| Find who knows about a topic or owns a system   | `glean-core` + `glean-people` |
-| Identify stakeholders for a change              | `glean-core` + `glean-people` |
-| All of the above                                | Install all plugins           |
+| Plugin | Description | Docs |
+| ------ | ----------- | ---- |
+| **[glean](./glean)** | Enterprise search, code exploration, and people discovery | [README](./glean/README.md) |
 
 ## Requirements
 
