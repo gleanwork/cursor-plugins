@@ -6,7 +6,14 @@
   },
   "metadata": {
     "description": "Official Glean plugin for Cursor — enterprise knowledge, code search, and people discovery.",
-    "keywords": ["glean", "enterprise-search", "knowledge-management", "productivity", "workplace", "mcp"]
+    "keywords": [
+      "glean",
+      "enterprise-search",
+      "knowledge-management",
+      "productivity",
+      "workplace",
+      "mcp"
+    ]
   },
   "plugins": [
     {
@@ -15,5 +22,5 @@
       "description": "Official Glean plugin for Cursor — enterprise search, code exploration, and people discovery."
     }
   ],
-  "version": "2.0.0"
+  "version": "2.1.0"
 }

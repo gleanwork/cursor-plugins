@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.1.0](https://github.com/gleanwork/cursor-plugins/compare/v2.0.0...v2.1.0) (2026-02-26)
+
+### Features
+
+* update plugin category and keywords for Cursor marketplace ([7991c0e](https://github.com/gleanwork/cursor-plugins/commit/7991c0eeb31bac044d7750973c36ee9973e34a02))
+
 ## [2.0.0](https://github.com/gleanwork/cursor-plugins/compare/v1.0.0...v2.0.0) (2026-02-25)
 
 ## 1.0.0 (2026-02-21)

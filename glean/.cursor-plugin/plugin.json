@@ -1,7 +1,7 @@
 {
   "name": "glean",
   "displayName": "Glean",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Official Glean plugin for Cursor — search documents, Slack, and email; explore code across repos; and find experts and stakeholders.",
   "author": {
     "name": "Glean",

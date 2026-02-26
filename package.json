@@ -1,6 +1,6 @@
 {
   "name": "@gleanwork/cursor-plugins",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Official Glean plugins for Cursor — enterprise knowledge integration",
   "keywords": [
     "glean",
