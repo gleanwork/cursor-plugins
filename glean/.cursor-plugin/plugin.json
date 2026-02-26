@@ -13,15 +13,15 @@
   "logo": "assets/avatar.svg",
   "keywords": [
     "glean",
-    "mcp",
     "enterprise-search",
+    "knowledge-management",
+    "productivity",
+    "workplace",
     "code-search",
-    "documents",
-    "cross-repo",
-    "experts",
-    "org-chart"
+    "people-search",
+    "mcp"
   ],
-  "category": "developer-tools",
+  "category": "productivity",
   "tags": [
     "mcp",
     "enterprise",
