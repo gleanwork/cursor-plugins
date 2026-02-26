@@ -5,7 +5,8 @@
     "email": "steve.calvert@glean.com"
   },
   "metadata": {
-    "description": "Official Glean plugin for Cursor — enterprise knowledge, code search, and people discovery."
+    "description": "Official Glean plugin for Cursor — enterprise knowledge, code search, and people discovery.",
+    "keywords": ["glean", "enterprise-search", "knowledge-management", "productivity", "workplace", "mcp"]
   },
   "plugins": [
     {
