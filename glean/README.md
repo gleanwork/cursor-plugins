@@ -19,15 +19,15 @@ Add your server to `~/.cursor/mcp.json`:
 {
   "mcpServers": {
     "glean": {
-      "url": "https://YOUR-INSTANCE-be.glean.com/mcp/YOUR-SERVER-NAME"
+      "url": "https://YOUR-SERVER-URL/mcp/YOUR-SERVER-NAME"
     }
   }
 }
 ```
 
-Replace `YOUR-INSTANCE` with your Glean instance name and `YOUR-SERVER-NAME` with the server
-name provided by your Glean administrator. Restart Cursor after editing — OAuth authentication
-is handled automatically on first use.
+Replace `YOUR-SERVER-URL` with your Glean server URL (find it at <https://app.glean.com/admin/about-glean>)
+and `YOUR-SERVER-NAME` with the server name provided by your Glean administrator. Restart Cursor
+after editing — OAuth authentication is handled automatically on first use.
 
 ## What's Included
 
@@ -81,10 +81,9 @@ is handled automatically on first use.
 
 - [Cursor](https://cursor.com) (latest version)
 - A Glean account with MCP access
-- Your Glean MCP server URL (format: `https://[instance]-be.glean.com/mcp/[server-name]`)
+- Your Glean MCP server URL (find it at <https://app.glean.com/admin/about-glean>)
 
-> **Note:** Glean MCP server URLs are instance-specific. Your Glean administrator can provide
-> your server name.
+> **Note:** Your Glean administrator can provide your server name.
 
 ## Support
 
