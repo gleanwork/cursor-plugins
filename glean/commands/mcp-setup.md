@@ -25,13 +25,13 @@ Once you have both values, instruct the user to add the following to their `~/.c
 {
   "mcpServers": {
     "glean": {
-      "url": "https://[server-url]/mcp/[server-name]"
+      "url": "[server-url]/mcp/[server-name]"
     }
   }
 }
 ```
 
-Replace `[server-url]` with their server URL (e.g. `acme-be.glean.com`) and `[server-name]` with the server name.
+Replace `[server-url]` with their server URL (e.g. `https://acme-be.glean.com` or `https://be-4f5226e2.glean.com`) and `[server-name]` with the server name.
 
 ### Step 4: Confirm Success
 
@@ -44,6 +44,6 @@ After configuration:
 
 ## Important Notes
 
-- The URL format is: `https://[server-url]/mcp/[server-name]`
+- The URL format is: `[server-url]/mcp/[server-name]`
 - Cursor handles OAuth authentication automatically on first tool use
 - The MCP configuration file is at `~/.cursor/mcp.json`

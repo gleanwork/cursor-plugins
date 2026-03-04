@@ -16,7 +16,7 @@ Then configure your Glean MCP connection — add your server to `~/.cursor/mcp.j
 {
   "mcpServers": {
     "glean": {
-      "url": "https://YOUR-SERVER-URL/mcp/YOUR-SERVER-NAME"
+      "url": "YOUR-SERVER-URL/mcp/YOUR-SERVER-NAME"
     }
   }
 }
