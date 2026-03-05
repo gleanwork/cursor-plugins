@@ -9,11 +9,9 @@ Help the user configure a Glean MCP server for Cursor. This command can be run m
 
 ## Setup Flow
 
-### Step 1: Get Instance Name
+### Step 1: Get Server URL
 
-Ask the user for their Glean instance name. Explain that if their Glean URL is `https://acme-be.glean.com`, their instance name is `acme`.
-
-You can find your Glean URL here: <https://app.glean.com/admin/about-glean>
+Ask the user for their Glean server URL. They can find it at <https://app.glean.com/admin/about-glean>.
 
 ### Step 2: Get Server Name
 
@@ -27,13 +25,13 @@ Once you have both values, instruct the user to add the following to their `~/.c
 {
   "mcpServers": {
     "glean": {
-      "url": "https://[instance]-be.glean.com/mcp/[server-name]"
+      "url": "[server-url]/mcp/[server-name]"
     }
   }
 }
 ```
 
-Replace `[instance]` with their instance name and `[server-name]` with the server name.
+Replace `[server-url]` with their server URL (e.g. `https://acme-be.glean.com` or `https://be-4f5226e2.glean.com`) and `[server-name]` with the server name.
 
 ### Step 4: Confirm Success
 
@@ -46,7 +44,6 @@ After configuration:
 
 ## Important Notes
 
-- The URL format is: `https://[instance]-be.glean.com/mcp/[server-name]`
-- The `-be` suffix is required (it's the backend endpoint)
+- The URL format is: `[server-url]/mcp/[server-name]`
 - Cursor handles OAuth authentication automatically on first tool use
 - The MCP configuration file is at `~/.cursor/mcp.json`

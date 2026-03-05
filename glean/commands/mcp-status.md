@@ -39,7 +39,7 @@ If the user wants to verify the connection is working, suggest they try a simple
 Glean MCP Status:
 
 Configured Servers:
-  - glean: https://acme-be.glean.com/mcp/default
+  - glean: https://acme-be.glean.com/mcp/default (your URL may differ)
 
 Status: Ready (authentication will be prompted on first use)
 ```
