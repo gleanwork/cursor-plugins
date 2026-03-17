@@ -11,21 +11,19 @@ Install from the [Cursor marketplace](https://cursor.com/marketplace/glean).
 
 ### 2. Configure your Glean MCP server
 
-Add your server to `~/.cursor/mcp.json`:
+Visit the [Glean MCP configurator](https://app.glean.com/settings/install?mcpConfigure=true&mcpHost=cursor) to get your server URL, then add it to `~/.cursor/mcp.json`:
 
 ```json
 {
   "mcpServers": {
     "glean": {
-      "url": "YOUR-SERVER-URL/mcp/YOUR-SERVER-NAME"
+      "url": "YOUR-GLEAN-MCP-URL"
     }
   }
 }
 ```
 
-Replace `YOUR-SERVER-URL` with your Glean server URL (find it at <https://app.glean.com/admin/about-glean>)
-and `YOUR-SERVER-NAME` with the server name provided by your Glean administrator. Restart Cursor
-after editing — OAuth authentication is handled automatically on first use.
+Restart Cursor after editing — OAuth authentication is handled automatically on first use.
 
 ## What's Included
 
@@ -79,9 +77,7 @@ after editing — OAuth authentication is handled automatically on first use.
 
 - [Cursor](https://cursor.com) (latest version)
 - A Glean account with MCP access
-- Your Glean MCP server URL (find it at <https://app.glean.com/admin/about-glean>)
-
-> **Note:** Your Glean administrator can provide your server name.
+- Your Glean MCP server URL (get it from the [Glean MCP configurator](https://app.glean.com/settings/install?mcpConfigure=true&mcpHost=cursor))
 
 ## Support
 

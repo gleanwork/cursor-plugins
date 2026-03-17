@@ -8,19 +8,19 @@ Official Glean plugins for [Cursor](https://cursor.com), enabling enterprise kno
 
 Install from the [Cursor marketplace](https://cursor.com/marketplace/glean).
 
-Then configure your Glean MCP connection — add your server to `~/.cursor/mcp.json`:
+Then configure your Glean MCP connection — visit the [Glean MCP configurator](https://app.glean.com/settings/install?mcpConfigure=true&mcpHost=cursor) to get your server URL, then add it to `~/.cursor/mcp.json`:
 
 ```json
 {
   "mcpServers": {
     "glean": {
-      "url": "YOUR-SERVER-URL/mcp/YOUR-SERVER-NAME"
+      "url": "YOUR-GLEAN-MCP-URL"
     }
   }
 }
 ```
 
-Replace `YOUR-SERVER-URL` with your Glean server URL (find it at <https://app.glean.com/admin/about-glean>) and `YOUR-SERVER-NAME` with the server name provided by your Glean administrator. Restart Cursor after editing — OAuth authentication is handled automatically on first use.
+Restart Cursor after editing — OAuth authentication is handled automatically on first use.
 
 ## Plugin
 
@@ -32,9 +32,7 @@ Replace `YOUR-SERVER-URL` with your Glean server URL (find it at <https://app.gl
 
 - [Cursor](https://cursor.com) (latest version)
 - A Glean account with MCP access
-- Your Glean MCP server URL (find it at <https://app.glean.com/admin/about-glean>)
-
-> **Note:** Glean MCP server URLs cannot be bundled with the plugin. Your Glean administrator can provide your server name.
+- Your Glean MCP server URL (get it from the [Glean MCP configurator](https://app.glean.com/settings/install?mcpConfigure=true&mcpHost=cursor))
 
 ## Support
 
