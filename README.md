@@ -6,9 +6,9 @@ Official Glean plugins for [Cursor](https://cursor.com), enabling enterprise kno
 
 ## Quick Start
 
-```
-/add-plugin glean
-```
+Install the plugin from the Cursor marketplace:
+
+**[cursor.com/marketplace/glean](https://cursor.com/marketplace/glean)** — click **Add** to install.
 
 Then configure your Glean MCP connection — add your server to `~/.cursor/mcp.json`:
 
