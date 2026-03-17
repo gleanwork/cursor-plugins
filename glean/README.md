@@ -7,7 +7,7 @@ and people discovery directly in your development workflow.
 
 ### 1. Install the plugin
 
-Search for **Glean** in the marketplace panel in Cursor, or browse to [cursor.com/marketplace/glean](https://cursor.com/marketplace/glean).
+Install from the [Cursor marketplace](https://cursor.com/marketplace/glean).
 
 ### 2. Configure your Glean MCP server
 
