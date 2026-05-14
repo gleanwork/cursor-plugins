@@ -39,6 +39,7 @@ Restart Cursor after editing — OAuth authentication is handled automatically o
 | `confidence-signals` | Communicate reliability and freshness of Glean results |
 | `meeting-context` | Find decisions and action items from meetings |
 | `people-lookup` | Find people by role, team, or expertise |
+| `memory-management` | Use memory as a context layer for session continuity, preferences, and decisions |
 | `synthesis-patterns` | Combine results across multiple Glean sources |
 | `code-exploration` | Explore code across your org's repositories |
 | `code-owners` | Identify who owns or maintains a code area |
