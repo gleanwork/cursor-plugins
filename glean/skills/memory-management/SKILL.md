@@ -6,15 +6,15 @@ description: >
 
 # Memory Management
 
-This skill assumes access to the Glean MCP server, which provides the `memory_schema` and `read_memory` tools used throughout.
+This skill assumes access to the Glean MCP server, which provides the `memory_schema` and `memory` tools used throughout.
 
 Use memory as a compact, maintained context layer — not as raw history and not as implementation truth. Good memory systems store durable, queryable summaries or typed nuggets that help future sessions resume cleanly.
 
 ## Execution Model
 
-**Reads are non-blocking.** Memory reads (`memory_schema`, `read_memory`) go through MCP, so they do not block the main task. Issue them inline whenever context would help.
+**Reads are non-blocking.** Memory reads (`memory_schema`, `memory` with action "read") go through MCP, so they do not block the main task. Issue them inline whenever context would help.
 
-**Writes must not block the main task.** When you need to write, update, or delete memory entries, delegate the write to a background subagent. The subagent should receive the category, content, and any relevant field values, then perform the write independently while the main task continues. Never pause user-facing work to wait for a memory write to complete.
+**Writes must not block the main task.** When you need to write, update, or delete memory entries, delegate the write to a background subagent. The subagent should receive the memory_source, category, content, and any relevant field values, then perform the write independently while the main task continues. Never pause user-facing work to wait for a memory write to complete.
 
 ## Core Rules
 
@@ -49,23 +49,24 @@ If memory conflicts with fresher source-of-truth evidence, trust the source of t
 
 ### 5. Assume read-first portability
 
-The most portable assumption is that you have `read_memory` plus `memory_schema`. Do not assume writes are available unless the runtime tool surface exposes them.
+The most portable assumption is that you have `memory` (read) plus `memory_schema`. Do not assume writes are available unless the runtime tool surface exposes them.
 
 ## Tool Capabilities
 
 ### memory_schema
 
-Use for discovery before retrieval.
+Read-only discovery tool. Use before retrieval to understand the available memory landscape.
 
 - **Input**: optional category string (omit for all categories across all sources)
 - **Returns per source/category pair**: name, description, writable flag, search_enabled, client-visible fields, optional storage config
 - **Best uses**: discover categories, check writability, find valid filter fields, inspect search and storage semantics
 
-### read_memory
+### memory
 
-Use to retrieve actual memory entries.
+Unified tool for reading, writing, updating, and deleting memory entries.
 
-- **Inputs**: action "read", optional memory_source, category, semantic query, limit (default 10), read_filters (equality-only, keys from schema)
+- **Read inputs**: action "read", optional memory_source, category, semantic query, limit (default 10), read_filters (equality-only, keys from schema)
+- **Write inputs**: action add/update/delete, memory_source (required — identifies the writing client), content, memory_id (required for update/delete), options (category and schema-field values)
 - **Returns**: id, source, category, content, optional updated_at, optional semantic score
 - **Writes**: only available if the runtime tool schema exposes add/update/delete and the category is marked writable
 
@@ -118,7 +119,7 @@ Use to retrieve actual memory entries.
 
 ## Search and Filtering
 
-- Use semantic `query` for topic/project/decision/concept searches
+- Use semantic `query` for topic/project/decision/concept searches (via `memory` with action "read")
 - Use `read_filters` for exact field/value constraints on filterable fields
 - Combine `query` with narrow category selection for high relevance
 - If `search_enabled` is false, rely on category choice plus exact filters
