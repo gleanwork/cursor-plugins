@@ -1,8 +1,7 @@
 ---
 name: enterprise-searcher
 description: Searches enterprise knowledge across documents, Slack, email, and other sources to find relevant information on a topic
-model: inherit
-readonly: true
+model: haiku
 ---
 
 # Enterprise Searcher Agent
