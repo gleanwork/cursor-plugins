@@ -1,7 +1,7 @@
 ---
 name: plan-prep-researcher
 description: Research enterprise context and similar patterns for planning tasks
-model: inherit
+model: haiku
 readonly: true
 ---
 
