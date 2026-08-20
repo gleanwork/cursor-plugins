@@ -9,11 +9,21 @@ and people discovery directly in your development workflow.
 
 Install from the [Cursor marketplace](https://cursor.com/marketplace/glean).
 
-### 2. Set up Glean
+### 2. Configure your Glean MCP server
 
-Start Cursor and prompt the harness to set up Glean, for example: `Set up
-Glean for me`. Complete the browser OAuth flow when prompted, then return to
-Cursor.
+Visit the [Glean MCP configurator](https://app.glean.com/settings/install?mcpConfigure=true&mcpHost=cursor) to get your server URL, then add it to `~/.cursor/mcp.json`:
+
+```json
+{
+  "mcpServers": {
+    "glean": {
+      "url": "YOUR-GLEAN-MCP-URL"
+    }
+  }
+}
+```
+
+Restart Cursor after editing — OAuth authentication is handled automatically on first use.
 
 ## What's Included
 
@@ -28,14 +38,14 @@ auto-trigger by task — there's no per-skill install. They cover:
 - **Personal productivity** — summarize your own activity, prep status updates, and surface what needs your attention.
 - **Skill authoring** — discover automation opportunities and generate new skills.
 
-The plugin provides a local Glean MCP server. If no Glean tools are visible,
-ask the user to set up Glean by prompting the harness (for example, `Set up
-Glean for me`).
+Glean tools are used through whatever Glean MCP server is connected in Cursor;
+if none is configured, see your host's Glean MCP setup (above).
 
 ## Requirements
 
 - [Cursor](https://cursor.com) (latest version)
 - A Glean account with MCP access
+- Your Glean MCP server URL (get it from the [Glean MCP configurator](https://app.glean.com/settings/install?mcpConfigure=true&mcpHost=cursor))
 
 ## Support
 
