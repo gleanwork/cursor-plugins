@@ -1,7 +1,7 @@
 {
   "name": "glean",
   "displayName": "Glean",
-  "version": "3.1.0",
+  "version": "3.4.0",
   "description": "Official Glean plugin — search documents, Slack, and email; explore code across repos; find experts and stakeholders; prep for meetings and onboarding.",
   "author": {
     "name": "Glean",
@@ -11,6 +11,10 @@
   "homepage": "https://docs.glean.com/administration/platform/mcp/about",
   "repository": "https://github.com/gleanwork/agent-plugins",
   "license": "MIT",
+  "rules": "./rules/",
+  "agents": "./agents/",
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
   "logo": "assets/avatar.svg",
   "keywords": [
     "glean",
@@ -33,9 +37,5 @@
     "people",
     "experts",
     "org"
-  ],
-  "skills": "./skills/",
-  "agents": "./agents/",
-  "rules": "./rules/",
-  "assets": "./assets/"
+  ]
 }
