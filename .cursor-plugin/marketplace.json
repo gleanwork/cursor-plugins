@@ -19,7 +19,7 @@
     {
       "name": "glean",
       "source": "glean",
-      "description": "Official Glean plugin — search documents, Slack, and email; explore code across repos; find experts and stakeholders; prep for meetings and onboarding."
+      "description": "Use Glean to search your company's knowledge, chat with Glean Assistant, and discover and use the skills and connected tools available to your organization."
     },
     {
       "name": "glean-dev-docs",
@@ -27,5 +27,5 @@
       "description": "Search the public Glean developer documentation — APIs, SDKs, MCP, and integration guides for building with Glean."
     }
   ],
-  "version": "3.4.0"
+  "version": "3.4.2"
 }
